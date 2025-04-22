@@ -1,0 +1,9 @@
+service:
+  twitchblindtest:
+    image: localhost/twitchblindtest
+    volumes:
+      - ".config/.env:/server/.env:ro"
+    port:
+      - "9080:3000"
+    networks:
+      - "host"
